@@ -18,6 +18,8 @@ To run the application, install Elm and the required librairies :
 * elm/http
 * elm/core
 
+Make sure to have use 'elm init' and put your Main.elm in the src repository.
+
 Then use the following command in the root directory of the project:
 
 * elm reactor
