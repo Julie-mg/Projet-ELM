@@ -47,7 +47,7 @@ init : () -> (Model, Cmd Msg)
 init flags =
     ({selected = " ", list = [], response = [], guess = ""},
     Http.get
-      { url = "http://localhost:8000/Projet-ELM/words.txt"
+      { url = "http://localhost:8000/words.txt"
       , expect = Http.expectString GotText
       }
     )
