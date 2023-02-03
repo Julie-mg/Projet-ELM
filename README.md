@@ -9,24 +9,11 @@ This is an Elm application that allows the user to guess a randomly selected wor
 
 ## Running the Application
 
-To run the application, install Elm and the required librairies :
+To run the application, install Elm and use the following command in the root directory of the project:
 
-* elm/browser
-* elm/random
-* elm/json
-* elm/html
-* elm/http
-* elm/core
+`elm reactor`
 
-Make sure to have use 'elm init' and put your Main.elm in the src repository.
-
-Then use the following command in the root directory of the project:
-
-* elm reactor
-
-Finally, you can either open the Main.elm file from http://localhost:8000 in your browser,
-
-or download the index.html, main.js and skeleton.css files, place them in your root directory and open the index.html file from http://localhost:8000. The main.js file is the Javascript converted file of the Main.elm.
+Then open Main.elm or index.html from http://localhost:8000 in your browser. The main.js file is the Javascript converted file of the Main.elm.
 
 ## Functionality
 
