@@ -1,16 +1,26 @@
-# Projet-ELM
+# Elm Word Guesser
 
-L'objectif de ce projet était d'écrire le programme elm d'une application web permettant à un joueur de deviner un mot dont les définitions sont affichées.
+This is an Elm application that allows the user to guess a randomly selected word from a list. The user is presented with the definitions of the word and can input their guess. If the user's guess is correct, they are congratulated.
 
-# Description fonctionnelle et technique
+## Requirements
 
-Au chargement de la page, le programme choisit au hasard un mot parmi ceux de la liste fournie (words.txt). Puis, il demande et affiche ces définitions à partir d'une requête HTTP adressée à Free Dictionary API. On doit alors deviner et écrire le mot qu'il croit correspondre aux définitions. On peut continuer tant qu'on n'a pas la réponse correcte. Quand on a écrit la réponse correcte, un message le confirme.
-Si il y a un problème de connexion, de chargement du fichier ou autre, un bouton "Start" s'affiche, permettant de relancer l'ouverture du fichier et la requète HTTP sans avoir à rafraichir la page.
-Si l'utilisateur ne trouve pas le mot à deviner, il a possibilité d'afficher la réponse avec le bouton "Show word".
-Pour changer de mot, l'utilisateur peut rafraichir la page ou cliquer sur le bouton "Next word".
+* Elm version 0.19.1
+* An HTTP server that serves words.txt at http://localhost:8000/ELM/words.txt. The words.txt file should contain a list of words, one per line.
 
-# Comment installer et lancer le programme
+## Running the Application
 
-Si ELM n'est pas déjà installé sur votre machine, vous pouvez l'installer en suivant ce guide : https://guide.elm-lang.org/install/elm.html
-Il faut ensuite s'assurer d'avoir lancé la commande 'elm init' dans votre dossier source, pour ainsi obtenir un fichier elm.json et un dossier src. Il faut ensuite télécharger les deux fichiers Main.elm et words.txt et placer le premier dans le dossier src, et le second, soit dans un dossier ELM (situé au même endroit que le dossier src initial), soit dans un autre dossier, mais il faudra alors modifier la ligne 50 du programme pour remplacer le lien par celui de votre fichier. Vous devez trouver son lien sur votre http://localhost:8000 (obtenu en tapant elm reactor).
-Il vous suffit ensuite de cliquer directement sur le programme Main.elm depuis http://localhost:8000.
+To run the application, install Elm and use the following command in the root directory of the project:
+
+* elm reactor
+
+Then open http://localhost:8000 in your browser.
+
+## Functionality
+
+* The application fetches a list of words from the HTTP server and selects a random word from the list.
+* The user is presented with the definitions of the selected word and can input their guess.
+* If the user's guess is correct, they are congratulated.
+* The user can get a new word by clicking the "Next Word" button.
+* The user can reveal the word by clicking the "Show Word" button.
+
+
