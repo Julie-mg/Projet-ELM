@@ -6205,7 +6205,7 @@ var $author$project$Main$init = function (flags) {
 		$elm$http$Http$get(
 			{
 				expect: $elm$http$Http$expectString($author$project$Main$GotText),
-				url: 'http://localhost:8000/ELM/words.txt'
+				url: 'http://localhost:8000/words.txt'
 			}));
 };
 var $elm$core$Platform$Sub$batch = _Platform_batch;
