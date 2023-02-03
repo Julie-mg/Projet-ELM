@@ -5,7 +5,7 @@ This is an Elm application that allows the user to guess a randomly selected wor
 ## Requirements
 
 * Elm version 0.19.1 or latest
-* An HTTP server that serves words.txt at http://localhost:8000/ELM/words.txt. The words.txt file must be download and put in your ~/ELM/ repository. This file contains a list of words.
+* An HTTP server that serves words.txt at http://localhost:8000/ELM/words.txt. This file contains a list of words.
 
 ## Running the Application
 
