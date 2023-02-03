@@ -9,7 +9,7 @@ This is an Elm application that allows the user to guess a randomly selected wor
 
 ## Running the Application
 
-To run the application, install Elm and use the following command in the root directory of the project:
+To run the application, install Elm, clone this Git repository into your computer and use the following command in the cloned repository of the project:
 
 `elm reactor`
 
