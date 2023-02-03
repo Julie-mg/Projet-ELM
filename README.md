@@ -24,7 +24,9 @@ Then use the following command in the root directory of the project:
 
 * elm reactor
 
-Finally, open the Main.elm file from http://localhost:8000 in your browser.
+Finally, you can either open the Main.elm file from http://localhost:8000 in your browser,
+
+or download the index.html, main.js and skeleton.css files, place them in your root directory and open the index.html file from http://localhost:8000. The main.js file is the Javascript converted file of the Main.elm.
 
 ## Functionality
 
